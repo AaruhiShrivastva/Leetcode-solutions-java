@@ -8,7 +8,10 @@ class Solution {
         for(int i=0; i<l1; i++){
             boolean check=true;
             for(int j=0; j<l2; j++){
-                if(Math.abs(arr1[i]-arr2[j])<=d)check=false;
+                if(Math.abs(arr1[i]-arr2[j])<=d){
+                    check=false;
+                    break;
+                }
             }
             if(check==true)count++;
         }
